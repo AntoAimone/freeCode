@@ -1,0 +1,67 @@
+
+/* estilo general */
+/* *=Selector Universal -->  Reiniciando todos los margenes o padding que pueda tener, ya que los exploradores ponen algunos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* lo que me hace el box.sizing es:  le dice al browser como va a calcular el tamaño del elemento en base a su margin y padding*/
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    /* flex-box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(imagenes/pizza1.jpg) no-repeat center center/cover;
+}
+
+
+/* Contenido  / los id se seleccionan con #*/
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    /* vh --> viewport Heigth */
+    width: 80vh;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.381);
+    border: 4px;
+}
+
+h1 {
+    font-size: 3rem;
+    width: 100%;
+    margin: 20px 10px;   
+}
+ul {
+    width: 100%;
+    height: 100%;
+}
+/* estilos a tipo clase */
+.topping { 
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 15px 0;
+    
+}
+
+.fondo-marron {
+background-color: #aa5822;
+}
+
+.fondo-naranja {
+background-color: orange;
+}
